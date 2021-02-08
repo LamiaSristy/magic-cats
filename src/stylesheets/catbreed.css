@@ -1,0 +1,32 @@
+.cat-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 10px;
+  border: solid 1px #e8e8e8;
+  background-color:#fde2ee;
+  border-radius: 5px;
+}
+
+.cat-container:hover {
+  transform: scale(1.02, 1.02);
+}
+
+.cat-breed-img {
+  height: 280px;
+  width: 300px;
+  object-fit: fill;
+}
+
+.cat-name {
+  font-family: 'Roboto Slab', serif;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #ec0b74;
+}
+

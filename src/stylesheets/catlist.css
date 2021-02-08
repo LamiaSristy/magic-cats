@@ -1,0 +1,7 @@
+.cats-container {
+  background-color:  #c5c1c3;
+  padding: 20px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
