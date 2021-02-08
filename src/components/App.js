@@ -1,5 +1,5 @@
 /*eslint-disable*/
-import '../stylesheets/App.css';
+import '../stylesheets/App.scss';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import CatList from '../containers/CatList';
 import Cat from '../containers/Cat';

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Cat from '../components/CatBreed';
 import fetchCats  from '../actions/fetchCats';
-import '../stylesheets/catlist.css';
+import '../stylesheets/catlist.scss';
 
 const mapStateToProp = state => ({
   cats: state.catsReducer,
@@ -32,14 +32,15 @@ const CatList = ({
       );
     }
 
-    const renderBook = book => <Cat key={book.id} cat={book}  />;
+    const renderCat = cat => <Cat key={cat.id} cat={cat}  />;
 
     return (
       <div>
-        <div className="cats-container">
-          {cats.cats.map(renderBook)}
+        <div className="cats-container card-deck">
+          {cats.cats.map(renderCat)}
         </div>
       </div>
+      
     );
 };
 

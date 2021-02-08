@@ -1,0 +1,27 @@
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.footer {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #3f729b;
+  color: #fff;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 -0.05rem 0.5rem #3f729b;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+}
+
+.hearts {
+  font-size: 30px;
+  margin: 0 5px;
+}

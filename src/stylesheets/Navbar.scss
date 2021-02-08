@@ -1,0 +1,36 @@
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  
+  .nav {
+    background-color: #3f729b;
+    color: #fff;
+    padding: 5px;
+    position: relative;
+    box-shadow: 0 0.2rem 0.5rem #3f729b;
+  }
+  
+  .navItems {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 18px;
+  }
+  
+  .navLink {
+    margin: 0 10px;
+    border-bottom: 1px solid #ff9e80;
+  }
+  
+  .navBrand {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    line-height: 0.9;
+  }
+  
+  .navBrandImg {
+    margin-right: 10px;
+  }

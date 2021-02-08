@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { getCats, catsNotFound } from './index';
 import { catBreedsUrl } from '../helpers/apiEndpoints';
-import { filterCats } from '../helpers/filterData';
+import { filterCats } from '../helpers/dataFormat';
 
 const fetchCats = () => dispatch => {
   axios.get(catBreedsUrl).then(res => {

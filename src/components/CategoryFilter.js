@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import '../stylesheets/filterstyles.css';
+import '../stylesheets/filterstyles.scss';
 
 const CategoryFilter = ({ catFilter }) => {
   const booksCategories = [
