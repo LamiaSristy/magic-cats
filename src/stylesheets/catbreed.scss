@@ -1,33 +1,16 @@
 @import '~bootstrap/scss/bootstrap.scss';
 
 .cat-container {
-  width: 300px;
+  width: 330px;
   border: solid 1px #e8e8e8;
   background-color:#fde2ee;
   border-radius: 5px;
   margin: 10px;  
 }
 
-// .cat-container:hover {
-//   transform: scale(1.02, 1.02);
-// }
-
-// .cat-breed-img {
-//   height: 280px;
-//   width: 300px;
-//   object-fit: fill;
-// }
-
-.card-img {
-  // width: 280px !important;
-  // height: 400px !important;
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: fill;
-}
-
 .cat-name {
   font-family: 'Roboto Slab', serif;
+  padding-left: 10px;
   font-size: 22px;
   font-weight: bold;
   font-stretch: normal;
@@ -37,3 +20,7 @@
   color: #ec0b74;
 }
 
+.img {
+  width: 100%;
+  border-radius: 5px;
+}

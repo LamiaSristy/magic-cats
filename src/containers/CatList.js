@@ -55,9 +55,8 @@ const CatList = ({
         <div className="cat-catalogue-container">
           <div className="cat-search">
             <CatFilter changeFilter={handleFilterChange} />          
-          </div>
-            
-          <div className="cats-container card-deck">
+          </div>         
+          <div className="cats-container d-flex flex-wrap">
             {filtered.map(renderCat)}
           </div>
         </div>      

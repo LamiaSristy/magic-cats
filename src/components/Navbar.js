@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import "../stylesheets/Navbar.scss";
 
 const Navbar = () => (
-  <nav className="navbar-light">
+  <nav className="navbar navbar-light">
     <div className="container">
       <ul className="navItems">
         <li>

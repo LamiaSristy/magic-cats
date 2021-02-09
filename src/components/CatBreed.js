@@ -7,19 +7,15 @@ import '../stylesheets/catbreed.scss';
 const Cat = ({ cat, history }) => {
   const showCat = id => history.push(`/cat/${id}`);
   return (
-    <div className="cat-list-body">
-      <div className="cat-container card">           
-        <div  className="card-img-container">
-          <img src={cat.url} alt={cat.name} className="card-img" />
-        </div>   
-        <div className="card-img-overlay"
-            onClick={() => showCat(cat.id)}
-            onKeyDown={() => showCat(cat.id)}
-            role="button"
-        >
-            <p className="cat-name">{cat.name}</p>
-        </div>    
-    </div>
+    <div>
+      <div className="cat-container"
+          onClick={() => showCat(cat.id)}
+          onKeyDown={() => showCat(cat.id)}
+          role="button"
+      >      
+        <img src={cat.url} alt={cat.name} className="img" />  
+        <p className="cat-name">{cat.name}</p>     
+      </div>
     </div>
   )
 };

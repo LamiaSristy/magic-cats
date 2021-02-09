@@ -9,15 +9,15 @@
 }
 
 .container {
-  max-width: 100%;
-  margin-left: -20px;
+  // max-width: 100%;
+  // margin-left: -20px;
 }
 
 .navItems {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  // justify-content: space-;
   font-size: 18px;
 }
 
@@ -35,13 +35,7 @@
 }
 
 .navBrand {
-  display: flex;
-  // align-items: center;
   font-size: 32px;
   line-height: 0.9;
   color: #ec0b74 !important;
-}
-
-.navBrandImg {
-  margin-right: 10px;
 }
