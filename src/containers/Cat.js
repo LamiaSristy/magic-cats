@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import fetchCat from '../actions/fetchCat';
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import FourOFour from '../components/404';
 import '../stylesheets/cat.scss';
 
 const mapStateToProps = state => ({
@@ -45,27 +46,32 @@ const Cat = ({
       <div>      
         <Navbar />
         <div className="cat-details-container">
-          <div className="cat-details">  
-            <div className="cat-details-img-container">
-              <img src={cat.url} alt={cat.name} className="cat-detailes-img" />
-            </div>          
-            <div className="cat-details-description">
-              <p>{cat.name}</p>
-              <p>{cat.description}</p>
-              <p>{cat.origin}</p>
-              <p>{cat.life_span}</p>
-              <p><a href={cat.wikipedia_url} target='_blank'>To know more about please visit </a></p>
-            </div>          
+          <div className="card mb-3">
+             <img src={cat.url} class="card-img-top" alt={cat.name}/>
+             <div class="card-body">
+              <h1 class="card-title cat-text">{cat.name}</h1>
+              <div className="cat-details-text cat-text">
+                <p class="card-text">Description:</p>
+                <p class="card-text"> {cat.description}</p>              
+                <p>Origin: {cat.origin}</p>
+                <p>Life-Span: {cat.life_span}</p>
+              </div>
+              <p class="card-text">
+                <small class="text-muted">
+                  <a href={cat.wikipedia_url} target='_blank'>To know more about please visit </a>
+                </small></p>
+            </div>
+          </div>
+
+          <button className="btn-create btn-primary" type="button" onClick={handleBackPage}>
+            Back
+          </button>
         </div>
-        <button className="btn-create" type="button" onClick={handleBackPage}>
-          Back
-        </button>
-      </div>
       <Footer />
     </div>
     ) : (
-      // <FourOFour />
-      <div className="404"><h2>Not Found</h2></div>
+      <FourOFour />
+      // <div className="404"><h2>Not Found</h2></div>
     );
 
     return view;

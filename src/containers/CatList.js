@@ -8,6 +8,8 @@ import fetchCats  from '../actions/fetchCats';
 import '../stylesheets/catlist.scss';
 import CatFilter from '../components/CatFilter';
 import Loading from '../components/Loading';
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const mapStateToProp = state => ({
   cats: state.catsReducer,
@@ -35,8 +37,8 @@ const CatList = ({
     if (cats.cats === null || cats.cats.length === 0) {
       return (
         <div>
-          {/* <Navbar /> */}
-          <div className="movies-not-loaded">
+         <Navbar />
+          <div className="">
             <h2>Error occured. Please try again.</h2>
           </div>
         </div>
@@ -48,17 +50,20 @@ const CatList = ({
     const renderCat = cat => <Cat key={cat.id} cat={cat}  />;
 
     return (
-      <div>
-        <div className="movie-list-body-header">
-          <CatFilter changeFilter={handleFilterChange} />
-          {/* <CatFilter/> */}
-        </div>
-          
-        <div className="cats-container card-deck">
-          {filtered.map(renderCat)}
-        </div>
-      </div>
-      
+      <div className = "cat-list-Home-container">
+        <Navbar />
+        <div className="cat-catalogue-container">
+          <div className="cat-search">
+            <CatFilter changeFilter={handleFilterChange} />          
+          </div>
+            
+          <div className="cats-container card-deck">
+            {filtered.map(renderCat)}
+          </div>
+        </div>      
+
+        <Footer />
+      </div>      
     );
 };
 

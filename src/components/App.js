@@ -3,6 +3,7 @@ import '../stylesheets/App.scss';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import CatList from '../containers/CatList';
 import Cat from '../containers/Cat';
+import AboutUs from './AboutUs';
 
 const App = () => (
   <div>
@@ -15,6 +16,9 @@ const App = () => (
           </Route>
           <Route exact path="/cat/:id">
             <Cat />
+          </Route>
+          <Route exact path="/AboutUs">
+            <AboutUs />
           </Route>
           {/* <Route path="/404">
             <FourOFour />

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import "../stylesheets/Navbar.scss";
 
 const Navbar = () => (
-  <nav className="nav navbar navbar-light bg-light">
+  <nav className="navbar-light">
     <div className="container">
       <ul className="navItems">
         <li>
@@ -11,13 +11,13 @@ const Navbar = () => (
             Cat-Pedia
           </Link>
         </li>
-        <li className="navLink">
+        <li className="navLink navLink-small">
           {' '}
           <Link to="/">Home</Link>
         </li>
-        <li className="navLink">
+        <li className="navLink navLink-small">
           {' '}
-          <Link to="/contact">Contact</Link>
+          <Link to="/AboutUs">AboutUs</Link>
         </li>
       </ul>
     </div>

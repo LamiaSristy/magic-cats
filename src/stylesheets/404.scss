@@ -1,0 +1,37 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+.four-o-four {
+  min-height: 100vh;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fof-header {
+  font-size: 100px;
+  color: white;
+  margin: 40px 0;
+}
+
+.fof-not-found {
+  color: white;
+  font-size: 40px;
+  margin: 20px 0 40px;
+  text-transform: uppercase;
+}
+
+.fof-go-home-link {
+  text-decoration: none;
+  font-size: 35px;
+  color: #333;
+  background-color: white;
+  margin: 10px 0 100px;
+  padding: 5px 25px;
+  border-radius: 8px;
+}
+
+.fof-go-home-link:hover {
+  background-color: #ddd;
+}
