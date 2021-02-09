@@ -5,6 +5,7 @@ export const CHANGE_FILTER = 'CHANGE_FILTER';
 export const GET_CAT = 'GET_CAT';
 export const CAT_NOT_FOUND = 'CAT_NOT_FOUND';
 
+
 export const getCats = cats => ({
   type: GET_CATS,
   payload: cats,
@@ -14,9 +15,9 @@ export const catsNotFound = () => ({
   type: CATS_NOT_FOUND,
 });
 
-export const catFilter = filter => ({
+export const changeFilter = filter => ({
   type: CHANGE_FILTER,
-  filter,
+  payload: filter,
 });
 
 export const getCat = cat => ({

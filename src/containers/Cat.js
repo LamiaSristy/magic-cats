@@ -54,7 +54,7 @@ const Cat = ({
               <p>{cat.description}</p>
               <p>{cat.origin}</p>
               <p>{cat.life_span}</p>
-              <p>To know more about please visit <a href='{cat.wikipedia_url}' target='_blank'></a></p>
+              <p><a href={cat.wikipedia_url} target='_blank'>To know more about please visit </a></p>
             </div>          
         </div>
         <button className="btn-create" type="button" onClick={handleBackPage}>
