@@ -46,24 +46,23 @@ const Cat = ({
       <div>      
         <Navbar />
         <div className="cat-details-container">
-          <div className="card mb-3">
-             <img src={cat.url} class="card-img-top" alt={cat.name}/>
-             <div class="card-body">
-              <h1 class="card-title cat-text">{cat.name}</h1>
-              <div className="cat-details-text cat-text">
-                <p class="card-text">Description:</p>
-                <p class="card-text"> {cat.description}</p>              
-                <p>Origin: {cat.origin}</p>
-                <p>Life-Span: {cat.life_span}</p>
-              </div>
+          <div className="row">
+             <div className="col-12 col-md-4">
+              <img src={cat.url} class="cat-img" alt={cat.name}/>
+             </div>             
+             <div class="col-12 col-md-8 cat-details-text">
+              <h1 class="cat-text">{cat.name}</h1>                             
+              <p class="card-text">Description: {cat.description}</p>              
+              <p>Origin: {cat.origin}</p>
+              <p>Life-Span: {cat.life_span}</p>              
               <p class="card-text">
                 <small class="text-muted">
                   <a href={cat.wikipedia_url} target='_blank'>To know more about please visit </a>
-                </small></p>
+                </small>
+              </p>
             </div>
           </div>
-
-          <button className="btn-create btn-primary" type="button" onClick={handleBackPage}>
+          <button className="mt-3 btn-create btn-primary" type="button" onClick={handleBackPage}>
             Back
           </button>
         </div>
@@ -71,7 +70,6 @@ const Cat = ({
     </div>
     ) : (
       <FourOFour />
-      // <div className="404"><h2>Not Found</h2></div>
     );
 
     return view;
