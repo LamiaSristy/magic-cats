@@ -14,7 +14,7 @@ const CatFilter = ({ changeFilter }) => {
 };
 
 CatFilter.propTypes = {
-  changeFilter: PropTypes.func.isRequired,
+  changeFilter: PropTypes.func,
 };
 
 export default CatFilter;

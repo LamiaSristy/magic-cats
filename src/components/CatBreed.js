@@ -7,7 +7,7 @@ import '../stylesheets/catbreed.scss';
 const Cat = ({ cat, history }) => {
   const showCat = id => history.push(`/cat/${id}`);
   return (
-    <div>
+    <div className="cat-breed">
       <div className="cat-container"
           onClick={() => showCat(cat.id)}
           onKeyDown={() => showCat(cat.id)}

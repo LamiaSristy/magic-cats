@@ -62,7 +62,7 @@ const Cat = ({
               </p>
             </div>
           </div>
-          <button className="mt-3 btn-create btn-primary" type="button" onClick={handleBackPage}>
+          <button className="mt-3 btn-create btn-primary button-cat" type="button" onClick={handleBackPage}>
             Back
           </button>
         </div>
