@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React from 'react';
 import { shallow } from 'enzyme';
 import CatBreed from '../../components/CatBreed';
@@ -15,14 +16,13 @@ describe('CatBreed component', () => {
     expect(element.length).toEqual(0);
   });
 
-  
   it('Should render', () => {
-    const elementImg = component.find('.img');    
+    const elementImg = component.find('.img');
     expect(elementImg.length).toBeLessThan(10);
   });
 
   it('Should render', () => {
-    const elementName = component.find('.cat-name');    
+    const elementName = component.find('.cat-name');
     expect(elementName.length).toBeLessThan(5);
   });
 
@@ -31,5 +31,3 @@ describe('CatBreed component', () => {
     expect(elementButton).toBeVisible;
   });
 });
-
-

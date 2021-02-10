@@ -20,8 +20,8 @@ const enhancer = composeEnhancers(
 const store = createStore(reducer, enhancer);
 
 ReactDOM.render(
-  <Provider store={store}>    
-    <App />    
+  <Provider store={store}>
+    <App />
   </Provider>,
   document.getElementById('root'),
 );

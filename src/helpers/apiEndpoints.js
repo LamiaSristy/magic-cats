@@ -1,4 +1,5 @@
-export const catBreedsUrl = `https://api.thecatapi.com/v1/breeds`;
+/*eslint-disable*/
+export const catBreedsUrl = 'https://api.thecatapi.com/v1/breeds';
 
 export const catDetailUrl = id => `https://api.thecatapi.com/v1/breeds/${id}`;
 

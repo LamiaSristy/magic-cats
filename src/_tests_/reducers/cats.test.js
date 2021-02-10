@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import catsReducer from '../../reducers/cats';
 import {
   getCats, catsNotFound, catNotFound } from '../../actions';

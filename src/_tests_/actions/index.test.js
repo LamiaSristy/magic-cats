@@ -1,5 +1,5 @@
 import {
-  getCats, catsNotFound, changeFilter, getCat, catNotFound
+  getCats, catsNotFound, changeFilter, getCat, catNotFound,
 } from '../../actions/index';
 import { cats, cat } from '../helper/helper';
 

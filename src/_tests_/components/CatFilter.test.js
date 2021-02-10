@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React from 'react';
 import { shallow } from 'enzyme';
 import CatSearch from '../../components/CatFilter';
@@ -29,5 +30,4 @@ describe('CatSearch component', () => {
     const element = component.find('.search');
     expect(element).toBeFalsy;
   });
-
 });

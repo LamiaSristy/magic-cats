@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React from 'react';
 import { shallow } from 'enzyme';
 import Cat from '../../containers/Cat';
@@ -23,7 +24,7 @@ describe('Cat container', () => {
     const element = component.find('.text-muted');
     expect(element).toBeFalsy;
   });
-  
+
   it('Should render', () => {
     const element = component.find('button-cat');
     expect(element).toBeTruthy;

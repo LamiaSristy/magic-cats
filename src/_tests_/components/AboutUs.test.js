@@ -15,5 +15,4 @@ describe('AboutUs component', () => {
     const element = component.find('.author-heading');
     expect(element.length).toEqual(1);
   });
-
 });

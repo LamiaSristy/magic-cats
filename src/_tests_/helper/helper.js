@@ -3,7 +3,7 @@ export const cats = [
     id: 550,
     name: 'catname',
     description: 'description',
-    life_span: '12-15',  
+    life_span: '12-15',
   },
 ];
 
