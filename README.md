@@ -18,11 +18,11 @@ This project is a website for cat informations, developed using React. Here I ha
 
 ## `Live Demo:`
 
-[cat-pedia]()
+[cat-pedia](https://magicalcats.herokuapp.com/)
 
 ## `Screen-shots:`
 
-<img src="assets/img/">
+<img src="assets/images/Screenshot.png">
 
 # Getting Started:
 
