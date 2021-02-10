@@ -1,21 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import "../stylesheets/Navbar.scss";
+
+import logo from '../assets/cat.png';
+import '../stylesheets/Navbar.scss'
 
 const Navbar = () => (
-  <nav className="navbar navbar-light">
+  <nav className="nav">
     <div className="container">
       <ul className="navItems">
         <li>
-          <Link to="/" className="navBrand">           
-            Cat-Pedia
+          <Link to="/" className="navBrand">            
+            <img className="navBrandImg" src={logo} alt="Brand logo" width="40" height="45" />                
           </Link>
         </li>
-        <li className="navLink navLink-small">
+        <li className="navLink">
           {' '}
-          <Link to="/">Home</Link>
+          <Link to="/">Magical Cats</Link>
         </li>
-        <li className="navLink navLink-small">
+        <li className="navLink">
           {' '}
           <Link to="/AboutUs">AboutUs</Link>
         </li>

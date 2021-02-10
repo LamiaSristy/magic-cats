@@ -4,12 +4,11 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import CatList from '../containers/CatList';
 import Cat from '../containers/Cat';
 import AboutUs from './AboutUs';
+import FourOFour from './404';
 
 const App = () => (
   <div>
-    {/* <CatList /> */}
     <BrowserRouter>
-        {/* <ScrollToTop /> */}
         <Switch>
           <Route exact path="/">
             <CatList />
@@ -20,9 +19,10 @@ const App = () => (
           <Route exact path="/AboutUs">
             <AboutUs />
           </Route>
-          {/* <Route path="/404">
+          <Route path="/404">
             <FourOFour />
-          </Route> */}
+          </Route>
+          <Route component={FourOFour} />
         </Switch>
       </BrowserRouter>
   </div>

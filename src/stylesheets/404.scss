@@ -2,7 +2,7 @@
 
 .four-o-four {
   min-height: 100vh;
-  background-color: #333;
+  background-color:  rgb(207, 203, 203);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,12 +11,12 @@
 
 .fof-header {
   font-size: 100px;
-  color: white;
+  color: rgb(216, 46, 75);
   margin: 40px 0;
 }
 
 .fof-not-found {
-  color: white;
+  color:  rgb(216, 46, 75);
   font-size: 40px;
   margin: 20px 0 40px;
   text-transform: uppercase;

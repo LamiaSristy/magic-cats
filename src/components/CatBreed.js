@@ -14,7 +14,7 @@ const Cat = ({ cat, history }) => {
           role="button"
       >      
         <img src={cat.url} alt={cat.name} className="img" />  
-        <p className="cat-name">{cat.name}</p>     
+        <p className="cat-name">{cat.name}</p>
       </div>
     </div>
   )
