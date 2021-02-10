@@ -7,7 +7,7 @@ import AboutUs from './AboutUs';
 import FourOFour from './404';
 
 const App = () => (
-  <div>
+  <div className="app">
     <BrowserRouter>
         <Switch>
           <Route exact path="/">
