@@ -21,5 +21,4 @@ describe('Loading component', () => {
     const item = component.find('.loading-wrap');
     expect(item).toMatchSnapshot();
   });
- 
 });

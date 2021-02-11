@@ -1,4 +1,3 @@
-/*eslint-disable*/
 import { GET_CATS, CATS_NOT_FOUND, GET_CAT } from '../actions/index';
 
 const initialState = {
@@ -17,11 +16,11 @@ const catsReducer = (state = initialState, action) => {
         cats: [...action.payload],
       };
     case CATS_NOT_FOUND:
-        return {
-          ...state,
-          catsLoading: false,
-          cats: null,
-        };
+      return {
+        ...state,
+        catsLoading: false,
+        cats: null,
+      };
     case GET_CAT:
       return {
         ...state,

@@ -1,4 +1,3 @@
-/*eslint-disable*/
 import { CHANGE_FILTER } from '../actions/index';
 
 const filterReducer = (state = '', action) => {

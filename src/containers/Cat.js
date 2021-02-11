@@ -1,4 +1,3 @@
-/*eslint-disable*/
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
@@ -24,7 +23,7 @@ const Cat = ({
   const { cat } = cats;
 
   useEffect(() => {
-    if (cat === null || cat.id != id) {
+    if (cat === null || cat.id !== id) {
       fetchCat(id);
     }
   }, [fetchCat, id]);
@@ -69,7 +68,7 @@ const Cat = ({
             </p>
             <p className="card-text">
               <small className="text-muted">
-                <a href={cat.wikipedia_url} target="_blank">To know more about please visit </a>
+                <a href={cat.wikipedia_url} target="_blank" rel="noreferrer">To know more about please visit </a>
               </small>
             </p>
           </div>

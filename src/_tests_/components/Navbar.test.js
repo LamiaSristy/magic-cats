@@ -45,5 +45,4 @@ describe('Navbar component', () => {
     const item = component.find('.navBrandImg');
     expect(item).toMatchSnapshot();
   });
-  
 });
