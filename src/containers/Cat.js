@@ -24,7 +24,9 @@ const Cat = ({
   const { cat } = cats;
 
   useEffect(() => {
-    fetchCat(id);
+    if (cat === null || cat.id != id) {
+      fetchCat(id);
+    }
   }, [fetchCat, id]);
 
   if (cats.catLoading) {

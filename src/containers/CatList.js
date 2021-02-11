@@ -1,9 +1,9 @@
 /*eslint-disable*/
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
+import { connect, useDispatch } from 'react-redux';
 import Cat from '../components/CatBreed';
-import { changeFilter } from '../actions/index';
+import { changeFilter, getCats } from '../actions/index';
 import fetchCats  from '../actions/fetchCats';
 import '../stylesheets/catlist.scss';
 import CatFilter from '../components/CatFilter';
@@ -24,9 +24,15 @@ const mapDispatchToProps = dispatch => ({
 const CatList = ({
   cats, fetchCats, filter, changeFilter
   }) => {
+    const dispatch = useDispatch();
+
     useEffect(() => {
-      fetchCats();
-    }, [fetchCats]);
+      if (cats.cats === null || cats.cats.length === 0) {
+        fetchCats();
+      } else {
+        dispatch(getCats(cats.cats));
+      }
+    }, [fetchCats, cats.cats.length]);
 
     const handleFilterChange = filter => changeFilter(filter);
 
