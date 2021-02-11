@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`404 component renders the header text of the Home page 1`] = `ShallowWrapper {}`;
+
+exports[`404 component renders the pagenotfound the page 1`] = `ShallowWrapper {}`;
+
+exports[`404 component renders the title text of the Home page 1`] = `ShallowWrapper {}`;
+
+exports[`404 component renders the title text of the Home page 2`] = `ShallowWrapper {}`;

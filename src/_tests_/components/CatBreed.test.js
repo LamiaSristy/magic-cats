@@ -1,6 +1,7 @@
 /*eslint-disable*/
 import React from 'react';
 import { shallow } from 'enzyme';
+import '@testing-library/jest-dom/extend-expect';
 import CatBreed from '../../components/CatBreed';
 
 const setup = () => shallow(<CatBreed />);
@@ -29,5 +30,18 @@ describe('CatBreed component', () => {
   it('Should render', () => {
     const elementButton = component.find('.cat-breed');
     expect(elementButton).toBeVisible;
+  });
+
+  test('renders the cat-breed the page', () => {
+    const catbreed = component.find('.cat-breed');
+    expect(catbreed).toMatchSnapshot();
+  });
+  test('renders the cat-container the page', () => {
+    const catcontainer = component.find('.cat-container');
+    expect(catcontainer).toMatchSnapshot();
+  });
+  test('renders the cat-images the page', () => {
+    const catimg = component.find('.img');
+    expect(catimg).toMatchSnapshot();
   });
 });

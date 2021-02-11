@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CatBreed component renders the cat-breed the page 1`] = `ShallowWrapper {}`;
+
+exports[`CatBreed component renders the cat-breed the page 2`] = `ShallowWrapper {}`;
+
+exports[`CatBreed component renders the cat-container the page 1`] = `ShallowWrapper {}`;
+
+exports[`CatBreed component renders the cat-images the page 1`] = `ShallowWrapper {}`;
+
+exports[`CatBreed component renders the pagenotfound the page 1`] = `ShallowWrapper {}`;

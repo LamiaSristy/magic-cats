@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component renders the cat-images the page 1`] = `ShallowWrapper {}`;
+
+exports[`Footer component renders the footer 1`] = `ShallowWrapper {}`;
