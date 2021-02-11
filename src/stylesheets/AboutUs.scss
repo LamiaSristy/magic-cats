@@ -1,0 +1,19 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+.author-detail-container {
+  text-align: center;
+  font-family: Source Sans Pro, sans-serif;
+  color: rgb(216, 46, 75);
+  background-color: rgb(207, 203, 203);
+  padding: 60px 15px;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border: 1px dotted rgb(216, 46, 75);
+  box-shadow: 0 0.2rem 0.5rem #e26ca3;
+  border-radius: 5px;
+}
+
+.author-heading {
+  font-size: x-large;
+}

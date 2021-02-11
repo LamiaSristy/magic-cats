@@ -1,0 +1,46 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+a {
+  color: #ec0b74 !important;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.nav {
+  background-color: #212222;
+  color: #fff;
+  padding: 5px;
+  position: relative;
+}
+
+.navItems {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 18px;
+}
+
+.navLink {
+  margin: 0 10px;
+}
+
+.navBrand {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  line-height: 0.9;
+}
+
+@media (min-width: 568px) {
+  .navBrand {
+    padding: 0 15px;
+  }
+
+  .navLink {
+    margin: 0 20px;
+  }
+}

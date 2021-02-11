@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading component renders the cat-images the page 1`] = `ShallowWrapper {}`;
+
+exports[`Loading component renders the loading in the page 1`] = `ShallowWrapper {}`;
+
+exports[`Loading component renders the loading-wrap in the page 1`] = `ShallowWrapper {}`;
+
+exports[`Loading component renders the loading-wrap in the page 2`] = `ShallowWrapper {}`;

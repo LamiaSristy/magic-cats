@@ -1,0 +1,28 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+.cat-container {
+  width: 330px;
+  border: solid 1px #e8e8e8;
+  background-color: #fde2ee;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.cat-name {
+  font-family: 'Roboto Slab', serif;
+  padding-left: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #ec0b74;
+}
+
+.img {
+  width: 100%;
+  height: 300px;
+  object-fit: fill;
+  border-radius: 5px;
+}

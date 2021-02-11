@@ -1,0 +1,36 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+.cat-details-container {
+  margin: 20px 20px 100px 20px;
+  padding: 30px;
+}
+
+.cat-img {
+  width: 100%;
+  border: 1px solid rgb(216, 46, 75);
+  border-radius: 5px;
+  box-shadow: 0 0.2rem 0.5rem #e26ca3;
+}
+
+.cat-text {
+  color: rgb(216, 46, 75);
+}
+
+.cat-details-text {
+  padding: 10px;
+  border: 1px solid rgb(216, 46, 75);
+  border-radius: 5px;
+  box-shadow: 0 0.2rem 0.5rem #e26ca3;
+}
+
+.cat-details-text p {
+  font-weight: bold;
+}
+
+.btn-primary {
+  width: 100px;
+  padding: 10px;
+  background-color: rgb(216, 46, 75) !important;
+  border: 1px solid  rgb(216, 46, 75) !important;
+  border-radius: 5px;
+}

@@ -1,6 +1,6 @@
 # Magic-Cats
 
-This project is a website for cat informations, developed using React. Here I have practiced the basics of React, like,
+This project is a catalogue for cat Breeds, from the whole world with links from wikiperia, which developed using React. Here I have practiced the basics of React, like,
 - Props and States,
 - component,
 - Life-cycle methods, 
@@ -12,17 +12,23 @@ This project is a website for cat informations, developed using React. Here I ha
 
 
 ## `Build-With:`
-
-- React
+- ([Thecatapi](https://docs.thecatapi.com/))
+- React-virtual DOM concepts
 - VScode
 
 ## `Live Demo:`
 
-[cat-pedia]()
+[cat-pedia](https://magicalcats.herokuapp.com/)
+
+
+## `Project presentations:`
+[Part1-Theproject](https://www.loom.com/share/8b92c5565a994bfa9fbb974767cac387)
+[Part2-TechTalks](https://www.loom.com/share/2b6be51a710748f396b4682c3c79beac)
+
 
 ## `Screen-shots:`
 
-<img src="assets/img/">
+<img src="assets/images/Screenshot.png">
 
 # Getting Started:
 

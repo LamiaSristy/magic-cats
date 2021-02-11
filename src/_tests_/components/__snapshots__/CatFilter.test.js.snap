@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CatSearch component renders the loading-wrap in the page 1`] = `ShallowWrapper {}`;
+
+exports[`CatSearch component renders the search-input in the page 1`] = `ShallowWrapper {}`;
